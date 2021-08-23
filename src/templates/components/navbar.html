@@ -1,0 +1,46 @@
+
+<nav class="navbar fixed-top navbar-expand-md navbar-light" style="background-color: #d6eeff;">
+    <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainMenu" aria-controls="mainMenu" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainMenu">
+            <ul class="navbar-nav ms-auto">
+
+            <li class="nav-item"><a {% if request.path == '/' %} class="nav-link active"{% else%} class="nav-link" {% endif %} href="{% url 'home' %}" target="_self" rel="noopener noreferrer">Home</a></li>
+            <li class="nav-item"><a c{% if request.path == '/about/' %} class="nav-link active"{% else%} class="nav-link" {% endif %} href="{% url 'about' %}" target="_self" rel="noopener noreferrer">About</a></li>
+            <li class="nav-item"><a c{% if request.path == '/contact/' %} class="nav-link active"{% else%} class="nav-link" {% endif %} href="{% url 'contact' %}" target="_self" rel="noopener noreferrer">Contact</a></li>
+            {% if user.is_authenticated %}
+            <li class="nav-item"><a c{% if request.path == '/products/' %} class="nav-link active"{% else%} class="nav-link" {% endif %} href="{% url 'products' %}" target="_self" rel="noopener noreferrer">Products</a></li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Useful Links
+                </a>
+                <ul class="dropdown-menu" aria-labellyby="navbarDropdown">
+                    <li><a class="dropdown-item" href="https://tsheets.intuit.com/" target="_blank" rel="noopener noreferrer">T Sheets</a></li>
+                    <li><a class="dropdown-item" href="https://vcg.mcasuite.com/home/" target="_blank" rel="noopener noreferrer">MCA Suite</a></li>
+                </ul>
+            </li>
+            
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                {{ user.get_full_name }}
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end" aria-labellyby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">My account</a></li>
+                    <li><a class="dropdown-item" href="#">Change password</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="">Log out</a></li>
+                    <!-- % url 'logout' % -->
+                </ul>
+            </li>
+            {% else %}
+            <form class="form-inline ml-auto">
+                <a href="" class="btn btn-outline-light">Log in</a>
+                <!-- % url 'login' % -->
+            </form>
+            {% endif %}
+            </ul>
+        </div>
+    </div>
+</nav>

@@ -1,0 +1,113 @@
+{% extends 'base.html' %}
+
+
+{% block content %} 
+    <h1>
+        Home Page
+    </h1>
+    <p>
+        Hello World <br/>
+    </p>
+  <body>
+    <div class="container-fluid">
+      <header class="jumbotron">
+        <h1>Xufeng li</h1>
+        <h2 class="font-italic">Web Developer Extraordinaire</h2>
+        <h3 class="text-right mt-5">Solving Web Dev problems everyday!</h3>
+      </header>
+
+      <nav>
+        <a class="btn badge-pill" href="">Contact Me</a>
+        <a class="btn" href="">Projects</a>
+      </nav>
+      <nav class="navbar navbar-expand-sm navbar-light bg-light">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link active btn badge-pill" href="#">Home <span class="sr-only">(current)</span></a>
+          <a class="nav-item nav-link" href="#">Features</a>
+          <a class="nav-item nav-link" href="#">Pricing</a>
+          <a class="nav-item nav-link disabled" href="#">Disabled</a>
+        </div>
+      </div>
+    </nav>
+
+      <div class="row">
+        <div class="col-lg-3 col-md col-sm col-3">
+          {% comment %} <a href="surprise.html"><img src="images/selfdog2.jpg" alt="a photo of felix the dog." class="img-fluid"/></a> {% endcomment %}
+        </div>
+
+        <div class="col-lg-9 col-md col-sm col-9">
+          Lorem ipsum dolor amet brunch slow-carb cillum messenger bag
+          food truck taxidermy before they sold out distillery disrupt
+          poke gentrify est. Occaecat sint id mixtape poke nisi pug. Eu
+          iceland duis enamel pin pitchfork letterpress woke. Messenger
+          bag est typewriter.
+          <br/>
+          <br/>
+          Shoreditch vexillologist etsy, sunt you probably haven't heard
+          of them glossier scenester microdosing. Keytar dolor letterpress,
+          edison bulb synth stumptown activated charcoal pinterest salvia
+          lomo listicle snackwave. Kogi wolf veniam edison.
+        </div>
+      </div>
+
+      <div class="accordian" id="accordianExample">
+        <div class="card">
+          <div class="card-header" id="portfolio01">
+            <h5 class="mb-0">
+              <button class="btn btn-link" type="button" data-toggle="collapse"
+              data-target="#collapseOne" aria-expanded="false" aria-controls="#collapseOne">
+                My First Portfolio Piece
+              </button>
+            </h5>
+          </div>
+
+
+          <div id="collapseOne" class="collapse" aria-labelledby="headingOne"
+          data-parent="#accordianExample">
+            <div class="card-body">
+              <p><a href="" target="_blank">Name of Website</a></p>
+              {% comment %} <figure><img src="images/website-1778529.png" atl="Screenshot of home page"/></figure> {% endcomment %}
+            </div>
+          </div>
+                  Lorem ipsum dolor amet brunch slow-carb cillum messenger bag
+          food truck taxidermy before they sold out distillery disrupt
+          poke gentrify est. Occaecat sint id mixtape poke nisi pug. Eu
+          iceland duis enamel pin pitchfork letterpress woke. Messenger
+          bag est typewriter.
+          <br/>
+          <br/>
+          Shoreditch vexillologist etsy, sunt you probably haven't heard
+          of them glossier scenester microdosing. Keytar dolor letterpress,
+          edison bulb synth stumptown activated charcoal pinterest salvia
+          lomo listicle snackwave. Kogi wolf veniam edison.
+                  Lorem ipsum dolor amet brunch slow-carb cillum messenger bag
+          food truck taxidermy before they sold out distillery disrupt
+          poke gentrify est. Occaecat sint id mixtape poke nisi pug. Eu
+          iceland duis enamel pin pitchfork letterpress woke. Messenger
+          bag est typewriter.
+          <br/>
+          <br/>
+          Shoreditch vexillologist etsy, sunt you probably haven't heard
+          of them glossier scenester microdosing. Keytar dolor letterpress,
+          edison bulb synth stumptown activated charcoal pinterest salvia
+          lomo listicle snackwave. Kogi wolf veniam edison.
+                  Lorem ipsum dolor amet brunch slow-carb cillum messenger bag
+          food truck taxidermy before they sold out distillery disrupt
+          poke gentrify est. Occaecat sint id mixtape poke nisi pug. Eu
+          iceland duis enamel pin pitchfork letterpress woke. Messenger
+          bag est typewriter.
+          <br/>
+          <br/>
+          Shoreditch vexillologist etsy, sunt you probably haven't heard
+          of them glossier scenester microdosing. Keytar dolor letterpress,
+          edison bulb synth stumptown activated charcoal pinterest salvia
+          lomo listicle snackwave. Kogi wolf veniam edison.
+        </div>
+    </div>
+    
+{% endblock %}
