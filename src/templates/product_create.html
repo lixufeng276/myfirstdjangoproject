@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+
+{% block content %} 
+    <h1>Create Product Here</h1>
+    <form method="POST"> {% csrf_token %}
+        {{ form.as_p}}
+        <input type="submit" value='Save' />
+    </form>
+    <br/>
+    <form action='http://www.google.com/search' method='GET'>
+        Google Search:
+        <input type='text' name='q' placeholder='Your Search' />
+        <input type="submit" value='Search' />
+    </form>
+{% endblock %}

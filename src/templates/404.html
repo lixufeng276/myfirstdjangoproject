@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+
+{% block content %} 
+    <h2>
+        404 Error
+    </h2>
+
+    <h4>
+        Page not found
+    </h4>
+
+    <h7>
+        Looks like you followed a bad link.
+    </h7>
+    <br/>
+    <h7>
+        Let's go back home:
+        <a href="{% url 'home' %}" target="_self" rel="noopener noreferrer">
+            <button type="button" class="btn btn-primary" style="">
+                Home
+            </button>
+        </a>
+    </h7>
+{% endblock %}
